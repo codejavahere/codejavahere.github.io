@@ -1,0 +1,4 @@
+[
+  {"slug":"welcome","date":"2026-08-30","title":"开始记录","summary":"把这个网站重新做成一本公开的数字日记。","tags":["随笔","网站"],"file":"2026-08-30-welcome.md"},
+  {"slug":"build-with-markdown","date":"2026-08-29","title":"为什么选择 Markdown","summary":"简单、纯文本、可版本控制，也方便长期保存自己的文字。","tags":["Markdown","技术"],"file":"2026-08-29-build-with-markdown.md"}
+]
