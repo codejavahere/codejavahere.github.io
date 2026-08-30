@@ -1,0 +1,1 @@
+document.getElementById('search').addEventListener('input',e=>{const v=e.target.value.toLowerCase();document.querySelectorAll('.card').forEach(c=>c.style.display=c.innerText.toLowerCase().includes(v)?'block':'none')})
