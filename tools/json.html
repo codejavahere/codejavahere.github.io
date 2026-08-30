@@ -1,1 +1,0 @@
-<!DOCTYPE html><html><head><meta charset='utf-8'><title>JSON格式化</title></head><body><h1>JSON格式化工具</h1><textarea id='i' style='width:100%;height:200px'></textarea><br><button onclick='f()'>格式化</button><pre id='o'></pre><script>function f(){try{o.textContent=JSON.stringify(JSON.parse(i.value),null,2)}catch(e){o.textContent=e}}</script></body></html>
