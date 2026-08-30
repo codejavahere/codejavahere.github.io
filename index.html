@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="CodeJavaHere 的 Markdown 日记本。记录代码、研究、生活与思考。">
+  <title>日记本 · CodeJavaHere</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav"><a class="brand" href="./">Diary<span>.</span></a><nav><a class="active" href="./">时间线</a><a href="about.html">关于</a><a href="https://github.com/codejavahere/codejavahere.github.io" target="_blank" rel="noopener">GitHub ↗</a></nav></div></header>
+<main class="container">
+  <section class="hero"><p class="eyebrow">PERSONAL JOURNAL</p><h1>记录正在发生的事。</h1><p class="intro">用 Markdown 写下代码、研究、生活与偶尔的胡思乱想。</p></section>
+  <section class="toolbar"><div class="search-wrap"><label for="search">⌕</label><input id="search" type="search" placeholder="搜索标题、摘要或标签…"></div><select id="year"><option value="all">全部年份</option></select><select id="tag"><option value="all">全部标签</option></select></section>
+  <div id="status" class="status">正在加载日记…</div>
+  <section id="timeline" class="timeline" aria-live="polite"></section>
+</main>
+<footer class="container footer">© <span id="yearNow"></span> CodeJavaHere · Built with Markdown</footer>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script><script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script><script src="assets/app.js"></script>
+</body></html>
