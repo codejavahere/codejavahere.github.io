@@ -1,0 +1,1 @@
+<!DOCTYPE html><html><body><h1>房贷计算器</h1><input id='p' placeholder='贷款金额'><input id='y' placeholder='年利率%'><button onclick='c()'>计算</button><div id='r'></div><script>function c(){let p=+p.value||0;let y=+document.getElementById('y').value||0;document.getElementById('r').innerText='年利息约: '+(p*y/100).toFixed(2);}</script></body></html>
