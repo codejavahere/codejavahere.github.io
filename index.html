@@ -1,20 +1,9 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="CodeJavaHere 的 Markdown 日记本。记录代码、研究、生活与思考。">
-  <title>日记本 · CodeJavaHere</title>
-  <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-<header class="site-header"><div class="container nav"><a class="brand" href="./">Diary<span>.</span></a><nav><a class="active" href="./">时间线</a><a href="about.html">关于</a><a href="https://github.com/codejavahere/codejavahere.github.io" target="_blank" rel="noopener">GitHub ↗</a></nav></div></header>
-<main class="container">
-  <section class="hero"><p class="eyebrow">PERSONAL JOURNAL</p><h1>记录正在发生的事。</h1><p class="intro">用 Markdown 写下代码、研究、生活与偶尔的胡思乱想。</p></section>
-  <section class="toolbar"><div class="search-wrap"><label for="search">⌕</label><input id="search" type="search" placeholder="搜索标题、摘要或标签…"></div><select id="year"><option value="all">全部年份</option></select><select id="tag"><option value="all">全部标签</option></select></section>
-  <div id="status" class="status">正在加载日记…</div>
-  <section id="timeline" class="timeline" aria-live="polite"></section>
-</main>
-<footer class="container footer">© <span id="yearNow"></span> CodeJavaHere · Built with Markdown</footer>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script><script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script><script src="assets/app.js"></script>
-</body></html>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="JSON Studio · JSON 格式化、折叠、转义与查看工具"><title>JSON Studio · CodeJavaHere</title><link rel="stylesheet" href="assets/style.css"></head><body>
+<header class="topbar"><div class="brand"><span class="brand-mark">{ }</span><span>JSON Studio</span></div><div class="toolbar">
+<button class="primary" id="formatBtn">格式化</button><i></i><label class="check"><input id="wrapToggle" type="checkbox">长行换行</label>
+<label class="select"><span>缩进</span><select id="indentSelect"><option value="2">2 空格</option><option value="4">4 空格</option><option value="tab">Tab</option></select></label><i></i>
+<button id="escapeBtn">转义</button><button id="unescapeBtn">去除转义</button><label class="select"><span>展开层级</span><select id="levelSelect"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="all">全部</option></select></label>
+<button id="expandAllBtn">全部展开</button><button id="collapseAllBtn">全部关闭</button><button id="copyBtn">复制</button></div></header>
+<main class="workspace"><section class="panel"><div class="panel-head"><b>原始数据</b><small>可编辑 · 仅触发格式化</small><em id="sourceStatus"></em></div><div class="editor-shell"><div class="gutter" id="sourceGutter"></div><div class="editor-scroll" id="sourceScroll"><div class="source-editor" id="sourceEditor" contenteditable="true" spellcheck="false"></div></div></div></section><div class="splitter"></div>
+<section class="panel"><div class="panel-head"><b>格式化数据</b><small>只读 · 浏览 / 格式化 / 复制 / 转义</small><em id="resultStatus"></em></div><div class="editor-shell"><div class="gutter" id="resultGutter"></div><div class="editor-scroll" id="resultScroll"><div class="result-editor" id="resultEditor"></div></div></div></section></main>
+<footer class="statusbar"><span id="message">准备就绪</span><span>纯前端运行 · 数据不会上传服务器</span></footer><script src="assets/app.js"></script></body></html>
